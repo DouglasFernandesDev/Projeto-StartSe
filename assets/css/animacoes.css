@@ -1,0 +1,49 @@
+/* COMEÇO ANIMAÇÕES */
+@keyframes c-glowing-blue {
+  0% {
+    box-shadow: 0 0 5px var(--cor-azul-fraca), 0 0 5px var(--cor-azul-fraca), 0 0 15px var(--cor-azul-fraca), 0 0 20px var(--cor-azul-principal), 0 0 10px var(--cor-azul-principal), 0 0 10px var(--cor-azul-principal), 0 0 10px var(--cor-azul-principal), 0 0 10px var(--cor-azul-principal)
+  }
+
+  to {
+    box-shadow: 0 0 2.5px var(--cor-azul-fraca), 0 0 2.5px var(--cor-azul-fraca), 0 0 7.5px var(--cor-azul-fraca), 0 0 10px var(--cor-azul-principal), 0 0 5px var(--cor-azul-principal), 0 0 5px var(--cor-azul-principal), 0 0 5px var(--cor-azul-principal), 0 0 2px var(--cor-azul-principal)
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+@keyframes text_reveal_name{
+    100%{
+        color: var(--primary-color);
+        font-weight: 500px;
+    }
+}
+
+/* Media Query */
+@media only screen and (min-width: 768px) {
+    #portfolio .project-item {
+        flex-direction: row;
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #portfolio .all-projects .project-info{
+        height: 100%
+    }
+    #portfolio .all-projects .project-img{
+        height: 100%
+    }
+    #portfolio .project-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+
+}
