@@ -10,20 +10,35 @@
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  } to {
+    width: 2.2em;
+  }
 }
 
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+@keyframes typing2 {
+  from {
+    width: 0;
+  } to {
+    width: 6.5em;
+  }
 }
 
-@keyframes text_reveal_name{
-    100%{
-        color: var(--primary-color);
-        font-weight: 500px;
-    }
+@keyframes blinkCursor {
+  from {
+    border-right-color: var(--cor-azul-principal);
+  }to{
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typing3 {
+  from {
+    width: 0;
+  } to {
+    width: 4.6em;
+  }
 }
 
 /* Media Query */
